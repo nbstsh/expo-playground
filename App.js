@@ -3,16 +3,18 @@ import HomeScreen from './components/HomeScreen';
 import ProfileScreen from './components/ProfileScreen';
 import MapExample from './components/MapExample';
 import TextOrDelete from './components/TextOrDelete';
+import Compass from './components/Compass';
 
 const MainNavigator = createStackNavigator(
 	{
 		Home: HomeScreen,
 		Profile: ProfileScreen,
 		Map: MapExample,
-		TextOrDelete: TextOrDelete
+		TextOrDelete: TextOrDelete,
+		Compass: Compass
 	},
 	{
-		initialRouteName: 'TextOrDelete'
+		initialRouteName: 'Compass'
 	}
 );
 
