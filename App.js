@@ -6,6 +6,7 @@ import TextOrDelete from './components/TextOrDelete';
 import Compass from './components/Compass';
 import Balloon from './components/Balloon';
 import MultiMedia from './components/MultiMedia';
+import PhoneEditor from './components/PhoneEditor';
 
 const MainNavigator = createStackNavigator(
 	{
@@ -15,10 +16,11 @@ const MainNavigator = createStackNavigator(
 		TextOrDelete: TextOrDelete,
 		Compass: Compass,
 		Balloon: Balloon,
-		MultiMedia: MultiMedia
+		MultiMedia: MultiMedia,
+		PhoneEditor: PhoneEditor
 	},
 	{
-		initialRouteName: 'MultiMedia'
+		initialRouteName: 'PhoneEditor'
 	}
 );
 
