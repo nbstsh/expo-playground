@@ -4,6 +4,7 @@ import ProfileScreen from './components/ProfileScreen';
 import MapExample from './components/MapExample';
 import TextOrDelete from './components/TextOrDelete';
 import Compass from './components/Compass';
+import Balloon from './components/Balloon';
 
 const MainNavigator = createStackNavigator(
 	{
@@ -11,10 +12,11 @@ const MainNavigator = createStackNavigator(
 		Profile: ProfileScreen,
 		Map: MapExample,
 		TextOrDelete: TextOrDelete,
-		Compass: Compass
+		Compass: Compass,
+		Balloon: Balloon
 	},
 	{
-		initialRouteName: 'Compass'
+		initialRouteName: 'Balloon'
 	}
 );
 

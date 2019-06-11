@@ -6,9 +6,10 @@ const Compass = () => {
 	const [v, setV] = useState(null);
 
 	useEffect(() => {
-		Magnetometer.addListener(v => {
+		const subscription = Magnetometer.addListener(v => {
 			setV(v);
 		});
+		return () => subscription.remove();
 	}, []);
 
 	let theta = '0';
