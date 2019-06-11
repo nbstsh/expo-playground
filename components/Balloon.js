@@ -5,18 +5,18 @@ import { DeviceMotion } from 'expo-sensors';
 const Balloon = () => {
 	const [dm, setDm] = useState(null);
 
-	// useEffect(() => {
-	// 	const subscription = DeviceMotion.addListener(dm => {
-	// 		setDm(dm);
-	// 	});
-	// 	return () => {
-	// 		subscription.remove();
-	// 	};
-	// }, []);
+	useEffect(() => {
+		const subscription = DeviceMotion.addListener(dm => {
+			setDm(dm);
+		});
+		return () => {
+			subscription.remove();
+		};
+	}, []);
 
 	let angle = 0;
 	if (dm && dm.rotation) {
-		angle = dm.rotation.gama;
+		angle = dm.rotation.gamma;
 	}
 
 	return (

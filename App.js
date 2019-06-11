@@ -5,6 +5,7 @@ import MapExample from './components/MapExample';
 import TextOrDelete from './components/TextOrDelete';
 import Compass from './components/Compass';
 import Balloon from './components/Balloon';
+import MultiMedia from './components/MultiMedia';
 
 const MainNavigator = createStackNavigator(
 	{
@@ -13,10 +14,11 @@ const MainNavigator = createStackNavigator(
 		Map: MapExample,
 		TextOrDelete: TextOrDelete,
 		Compass: Compass,
-		Balloon: Balloon
+		Balloon: Balloon,
+		MultiMedia: MultiMedia
 	},
 	{
-		initialRouteName: 'Balloon'
+		initialRouteName: 'MultiMedia'
 	}
 );
 
